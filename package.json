@@ -1,17 +1,36 @@
 {
   "name": "typescript-formacao-dev",
   "version": "1.0.0",
-  "description": "- Objetos - Classes - Atributos - Métodos",
+  "description": "Repositório para aprender e realizar exercícios com o intuito em se desenvovler com typescript",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev --respawn src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "Grazielle Café ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graziellecafe/typescript-formacao-dev.git"
+  },
+  "keywords": [
+    "typescript",
+    "jest",
+    "testes"
+  ],
+  "author": "Grazielle Café",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graziellecafe/typescript-formacao-dev/issues"
+  },
+  "homepage": "https://github.com/graziellecafe/typescript-formacao-dev#readme",
   "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-typescript": "^7.25.7",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.13",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "ts-node-dev": "^2.0.0",

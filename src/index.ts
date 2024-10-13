@@ -1,2 +1,2 @@
-const x: number = 3; 
-console.log(x*78); 
+// import "./tipos/variaveis"
+import "./tipos/array"; 
