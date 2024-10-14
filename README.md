@@ -87,3 +87,55 @@ console.log(typeof hobbies);
 const endereco: [string, number] = ["Grazielle Café", 30]; 
 console.log(endereco); 
 ```
+
+
+```js
+###  ✏︎ Enum
+enum DiaSemana { 
+  DOMINGO = 'domingo', 
+  SEGUNDA = 'segunda', 
+  TERCA = 'terca', 
+  QUARTA= 'quarta', 
+  QUINTA = 'quinta', 
+  SEXTA = 'sexta',
+  SABADO = 'sabado'
+}
+
+console.log(DiaSemana.DOMINGO); //domingo
+
+let dia: DiaSemana; 
+dia = DiaSemana.QUINTA; 
+console.log(dia); 
+```
+
+```js
+const VendaStatus =  {
+  INICIADA:  'iniciada', 
+  CONCLUIDA:  'concluida', 
+  CANCELADA:  'cancelada'
+} as const
+
+console.log(VendaStatus.INICIADA)
+```
+
+```js
+const ERROS = { 
+  NOME_NULO: 'nome_nulo', 
+  EMAIL_NAO_ENCONTRADO: 'email_nao_encontrado',
+  URL_INVALIDA: 'url_invalida',
+}
+
+let erro: string 
+erro = ERROS.NOME_NULO;
+console.log(erro); 
+```
+
+```js
+type StatusVendas = 'iniciada' | 'concluida' | 'cancelada';
+
+let st: StatusVendas = "concluida";
+console.log(st); 
+
+st =  "iniciada"; 
+console.log(st); 
+```
